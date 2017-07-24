@@ -10,4 +10,4 @@ function clearfield() {
  $("#result").html(" "); 
 }
 
-$("#source").after('<br><input type="button" title="Посмотреть" style="width:50%" onclick="ruhtml(\'source\')" value="Посмотреть"><input type="button" title="Очистить" onclick="clearfield()" style="width:50%" value="Очистить">');
+$("#source").after('<br><input type="button" title="Посмотреть результат" style="width:50%" onclick="ruhtml(\'source\')" value="Посмотреть"><input type="button" title="Очистить" onclick="clearfield()" style="width:50%" value="Очистить результат">');
