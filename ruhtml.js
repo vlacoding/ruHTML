@@ -1,7 +1,7 @@
 function ruhtml(ru) 
 {  
   var text = $('#'+ru).val();  
-  text = text.split('\n').join('<br/>').split('<блок').join('<div').split('</блок>').join('</div>').split('выравн=').join('align=').split('<стр').join('<span').split('</стр>').join('</span>').split('[/c]').join('</div>').split('<и ').join('<img').split(' ист=').join(' src=').split('[url').join('<a href').split('url]').join('a>').split('[size').join('<font size').split('size]').join('font>').split('[color').join('<font color').split('color]').join('font>').split('<').join('<').split('[').join('<').split(']').join('>').split('[/').join('</');  
+  text = text.split('<рс>').join('<br>').split('<блок').join('<div').split('</блок>').join('</div>').split('выравн=').join('align=').split('<стр').join('<span').split('</стр>').join('</span>').split('<скрипт').join('<script').split('<и ').join('<img').split(' ист=').join(' src=').split('</скрипт>').join('</script>').split(' шир=').join(' width=').split(' выс=').join(' height=').split('<я гс=').join('<a href=').split('</я>').join('</a>').split(' стиль=').join(' style=').split('<ж').join('<b').split('<к').join('<i').split('<ч').join('<u').split('</ж>').join('</b>').split('</к>').join('</i>').split('</ч>').join('</u>');  
   if(text == '') text = 'Сначала введите ruHTML-код в поле выше!';  
   $("#result").html(text);  
 }
