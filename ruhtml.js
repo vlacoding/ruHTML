@@ -6,4 +6,4 @@ function ruhtml(ru)
   $("#result").html(text);  
 }
 
-$("#source").after('<input type="button" title="Посмотреть" onclick="ruhtml(\'source\')" value="Посмотреть">');
+$("#source").after('<br><input type="button" title="Посмотреть" onclick="ruhtml(\'source\')" value="Посмотреть">');
