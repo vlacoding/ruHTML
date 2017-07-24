@@ -6,4 +6,8 @@ function ruhtml(ru)
   $("#result").html(text);  
 }
 
-$("#source").after('<br><input type="button" title="Посмотреть" style="width:100%" onclick="ruhtml(\'source\')" value="Посмотреть">');
+function clearfield() {
+ $("#result").html(" "); 
+}
+
+$("#source").after('<br><input type="button" title="Посмотреть" style="width:50%" onclick="ruhtml(\'source\')" value="Посмотреть"><input type="button" title="Очистить" onclick="clearfield" style="width:50%" value="Очистить">');
